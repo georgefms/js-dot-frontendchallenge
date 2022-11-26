@@ -16,7 +16,6 @@ function compileSass(){
     outputStyle: 'compressed'
   }).on('error', sass.logError))
   .pipe(gulp.dest('src/dist/css'))
-  .rename('min.css')
 }
 
 function watchFunction(){
