@@ -12,12 +12,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 937pt;
+	height: 937px;
 	width: 100%;
 	
 	&-logo{
-		margin-bottom: 167.5pt;
-		margin-top: 159.5pt;
+		margin:159.5px auto 167.5px auto;
 	}
 
 	&-text{
@@ -29,6 +28,7 @@
 		&-h2{
 			color: $h1-color;
 			font: $h2-desktop;
+			font-weight: 400;
 		}
 	}
 }
