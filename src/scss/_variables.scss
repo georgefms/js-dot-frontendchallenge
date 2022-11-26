@@ -1,0 +1,26 @@
+//Global Colors
+$primary-color: #7A2B58;
+$secondary-color: #353535;
+$tertiary-color: #FF3737;
+$quaternary-color:#FFCC33;
+$quinary-color:#707070;
+$senary-color: #03B5B0;
+
+//Text colors: 
+$h1-color: #ffffff;
+$h2-color: $quaternary-color;
+$h3-color: $senary-color;
+$p-color: $quinary-color;
+
+//Font setup: 
+  //Desktop
+  $h1-desktop: bold 87pt 'Raleway';
+  $h2-desktop: bold 45pt 'Raleway';
+  $h3-desktop: bold 38pt 'Raleway';
+  $p-desktop: 20pt;
+
+  //Mobile
+  $h1-mobile: bold 45px 'Raleway';
+  $h2-mobile: bold 32px 'Raleway';
+  $h3-mobile: bold 25px 'Raleway';
+  $p-mobile: 16px;
