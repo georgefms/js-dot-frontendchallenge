@@ -32,3 +32,60 @@
 		}
 	}
 }
+
+.briefcase {
+	background-color: $primary-color;
+	height: 482px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+	overflow: hidden;
+
+	&-blue-icon{
+		position: absolute;
+		left: -168px;
+		bottom: -28px;
+  }
+
+	&-title{
+		color: $h2-color;
+		font: $h2-desktop;
+	}
+
+	&-wrapper{
+		border: 3px solid #ffffff;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: row;
+		padding: 37px 64px;
+		align-items: center;
+		gap: 87px;
+	}
+
+	&-text-wrapper{
+		white-space: wrap;
+		width: 462px;
+		text-align: left;
+		color: #fff;
+	}
+
+	&-list{
+		&-item{
+			display: flex;
+    	flex-wrap: nowrap;
+    	align-items: center;
+		}
+		&-item::before{
+				content: "";
+				width: 10px;
+				height: 10px;
+				background-color: $quaternary-color;
+				margin-right: 5px;
+		}
+	}
+
+
+}
