@@ -160,3 +160,59 @@
 
 	
 }
+
+.about{
+	height: 680px;
+	width: 100%;
+	background-color: $secondary-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	&-title{
+		font: $h3-desktop;
+		color: $h3-color;
+	}
+
+	&-wrapper{
+		width: 944px;
+		height: 428px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-text{
+		color: #fff;
+		font-size: $p-desktop;
+		line-height: 20px;
+		white-space: normal;
+		width: 406px;
+		text-align: left;
+	}
+
+	&-image-container{
+		position: relative;
+		display: flex;
+		align-items: center;
+		overflow:visible;
+	}
+
+	&-blue-icon{
+		position: absolute;
+		top: -40px;
+		left: -25px;
+	}
+	&-yellow-icon{
+		position: absolute;
+		bottom: -40px;
+		right: -25px;
+	}
+
+	&-office{
+		width: 462px;
+		height: 362px;
+	}
+}
