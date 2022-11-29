@@ -265,22 +265,29 @@
 	}
 
 	&-inner-text{
-		height: 335px;
-		width: 335px;
-		scale: 75%;
+		box-sizing: border-box;
+		height: 300px;
+		width: 300px;
 		background-color: $quaternary-color;
 		position: absolute;
-		top: 14%;
-		right: 10%;
-		padding: 75px;
+		left: 50%;
+		margin-left: -150px;
+		top: 50%;
+		margin-top: -150px;
 		border-radius: 100%;
 		text-align: center;
-		text-justify: auto;
+		font-size: 26px;
+		border: solid #000000 3px;	
+		white-space: normal;
+		padding: 55px;
 	}
 }
 
-.toggle-icon-minos{
+.minus{
 	background-color: $primary-color;
+	background-image: url(/src/assets/icons/icon-minos.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 54px;
 	height: 54px;
 	border-radius: 100%;
@@ -288,8 +295,11 @@
 	padding: 5px;
 }
 
-.toggle-icon-plus{
+.plus{
 	background-color: $senary-color;
+	background-image: url(/src/assets/icons/icon-plus.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 54px;
 	height: 54px;
 	border-radius: 100%;
@@ -299,15 +309,18 @@
 
 #yellow-toggle{
 	top: 16%;
-	right: 60%;
+	right: 45%;
+	z-index: 1;
 }
 #gray-toggle{
 	bottom: 14%;
-	left: 60%;
+	right: 7%;
+	z-index: 1;
 }
 #red-toggle{
 	bottom: 14%;
-	left: 5%;
+	left: 7%;
+	z-index: 1;
 }
 
 .footer{
@@ -326,4 +339,19 @@
 	background-image: url("/src/assets/icons/icon-arrow-up.svg");
 	background-color: $primary-color;
 	background-repeat: no-repeat;
+}
+
+.yellow{
+ background-color: $quaternary-color;
+ color: #000;
+}
+
+.red{
+	background-color: $tertiary-color,;
+	color: #fff;
+}
+
+.gray{
+	background-color: $quinary-color;
+ color: #fff;
 }

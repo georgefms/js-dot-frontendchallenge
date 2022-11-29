@@ -16,3 +16,46 @@ document.getElementsByTagName('head')[0].appendChild(script);
       }
     }
   )
+
+  //Interactive Circle
+  $(".yellow").hide();
+  $(".red").hide();
+  $(".gray").hide();
+  $("#yellow-toggle").click(
+    function(){
+        $(".yellow").toggle()
+        if($(".yellow").is(":visible")){
+          $(this).addClass("plus").removeClass("minus")
+
+        }
+        else{
+          $(this).addClass("minus").removeClass("plus")
+        }
+      }
+  )
+  $("#gray-toggle").click(
+    function(){
+    $(".gray").toggle()
+    if($(".gray").is(":visible")){
+      $(this).addClass("plus").removeClass("minus")
+
+    }
+    else{
+      $(this).addClass("minus").removeClass("plus")
+    }
+  }
+  )
+
+  $("#red-toggle").click(
+    function(){
+    $(".red").toggle()
+    if($(".red").is(":visible")){
+      $(this).addClass("plus").removeClass("minus")
+
+    }
+    else{
+      $(this).addClass("minus").removeClass("plus")
+    }
+  }
+  )
+
