@@ -14,7 +14,7 @@
 	align-items: center;
 	height: 937px;
 	width: 100%;
-	
+
 	&-logo{
 		margin:159.5px auto 167.5px auto;
 	}
@@ -134,31 +134,56 @@
 		position: relative;
 	}
 
-	&-item-image{
-		background-color: #fff;
-		border-radius: 20px;
-		padding: 42px 65px;
-		height: 150px;
-		width: 201px;
-		border-bottom: $primary-color solid 40px;
-		position: relative;
-	}
+
 
 	&-item{
 		position: relative;
-		&-icon{
-			scale: 60%;
-			bottom: -25px;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		&-btn{
 			position: absolute;
-			left: 50%;
-			margin-left: -27.2px;
-			background-color: #fff;
+			background-color: #ffffff;
+			background-image: url("/src/assets/icons/icon-arrow-down.svg");
+			background-repeat: no-repeat;
+			height: 54px;
+			width: 54px;
 			border-radius: 100%;
+			left: 50%;
+			top: 47%;
+			margin-left: -27px;
 			padding: 10px;
+
+		}
+		&-text{
+			box-sizing: border-box;
+			position: absolute;
+			background-color: $quaternary-color;
+			font-size: 18px;
+			color: $primary-color;
+			height: calc(100% - 234px);
+			width: 331px;
+			bottom: 0;
+			text-align: left;
+			padding: 60px 20px 20px 20px;
+			white-space: normal;
+			line-height: 20px;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+
+		}
+		&-image{
+			background-color: #fff;
+			border-radius: 20px;
+			padding: 42px 65px;
+			height: 150px;
+			width: 201px;
+			border-bottom: $primary-color solid 40px;
+			position: relative;
 		}
 	}
 
-	
+
 }
 
 .about{
@@ -292,4 +317,13 @@
 	align-items: center;
 	justify-content: center;
 	background-color: $primary-color;
+}
+
+
+// Jquery Classes
+
+.ativo{
+	background-image: url("/src/assets/icons/icon-arrow-up.svg");
+	background-color: $primary-color;
+	background-repeat: no-repeat;
 }
