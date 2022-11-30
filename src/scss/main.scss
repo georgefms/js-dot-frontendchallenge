@@ -519,10 +519,135 @@
 }
 
 //Tablets
-@media (min-width: 381px) and (max-width: 768px){
-
-}
-//Small screen desktops
 @media (min-width: 769px) and (max-width: 1024px) {
-	
+	.header{
+		background-image: url("/src/assets/images/header-1024.png");
+		height: 470px;
+		justify-content: space-evenly;
+		&-logo{
+			margin: 0;
+		}
+		
+		&-text{
+			&-h1{
+				font: $h1-mobile;
+			}
+			&-h2{
+				font: $h2-mobile;
+			}
+		}
+	}
+
+	.briefcase{
+		height: 100%;
+		gap: 55px;
+		&-title{
+			font: $h2-mobile;
+			margin: 25px;
+
+		}
+
+		&-wrapper{
+			flex-direction: column;
+			position: relative;
+			box-sizing: border-box;
+			width: 100%;
+			padding: 25px;
+			margin-bottom: 25px;
+			
+		}
+		&-wrapper img{
+			position: absolute;
+			top: -80px;
+		}
+		
+		&-text-wrapper{
+			width: 100%;
+			box-sizing: border-box;
+			padding-top: 60px;
+			font-size: $p-mobile;
+			padding-bottom: 15px;
+		}
+	}
+
+	.dropdown{
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		justify-content: space-evenly;
+		&-title{
+			font: $h2-mobile;
+			margin: 15px;
+		}
+		&-text{
+			font-size: $p-mobile;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+		&-wrapper{
+			width: 100%;
+			justify-content: space-evenly;
+			gap: 20px;
+		}
+		&-items-wrapper{
+			flex-direction: column;
+			width: auto;
+		}
+
+		&-item{
+			width: 100%;
+			margin-bottom: 15px;
+			&-text{
+				width: 97.5%;
+			}
+		}
+
+		&-item-image{
+			width: 59.38%;
+		}
+
+	}
+
+	.about{
+		height: 100%;
+		overflow: hidden;
+		&-title{
+			font: $h3-mobile;
+			margin: 30px;
+		}
+		&-wrapper{
+			width: 100%;
+			height: 100%;
+			flex-direction: column-reverse;
+			justify-content: space-evenly;
+			gap: 30px;
+			padding: 20px;
+		}
+		&-text{
+			width: 100%;
+			font-size: $p-mobile;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+		&-image-container{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 40px;
+			box-sizing: border-box;
+		}
+		&-office{
+			width: 100%;
+		}
+	}
+
+	.interactive-circle{
+		height: 100%;
+		gap: 20px;
+		&-text{
+			width: 100%;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+	}
 }
