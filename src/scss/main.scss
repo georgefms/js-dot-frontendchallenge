@@ -449,14 +449,14 @@
 		overflow: hidden;
 		&-title{
 			font: $h3-mobile;
-			margin-bottom: 15px;
+			margin-bottom: 50px;
 		}
 		&-wrapper{
 			width: 100%;
 			height: 100%;
-			flex-direction: column;
+			flex-direction: column-reverse;
 			justify-content: space-evenly;
-			gap: 50px;
+			gap: 30px;
 		}
 		&-text{
 			width: 100%;
@@ -472,6 +472,48 @@
 		&-office{
 			width: 100%;
 		}
+	}
+
+	.interactive-circle{
+		width: 100%;
+		padding-top: 20px;
+		height: 100%;
+		&-text{
+			width: 100%;
+			box-sizing: border-box;
+			white-space: normal;
+			padding: 10px;
+		}
+		&-image{
+			width: 100%;
+		}
+		&-wrapper{
+			width: 100%;
+			padding-bottom: 20px;
+		}
+		&-inner-text{
+			scale: 60%;
+		}
+	}
+
+	.footer img{
+		scale: 65%;
+	}
+
+	#yellow-toggle{
+		top:13%;
+		right: 42%;
+		scale: 70%;
+	}
+	#gray-toggle{
+		bottom: 11%;
+		right: 4%;
+		scale: 70%;
+	}
+	#red-toggle{
+		bottom: 11%;
+		left: 4%;
+		scale: 70%;
 	}
 
 }
