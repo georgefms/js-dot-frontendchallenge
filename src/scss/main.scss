@@ -359,12 +359,12 @@
 // Media Queryes 
 
 //Smartphones 
-@media (max-width: 320px){
+@media (min-width: 320px) and (max-width: 768px){
 	.header{
 		background-image: url("/src/assets/images/header-360.png");
 		height: 470px;
 		justify-content: space-evenly;
-
+		background-size: cover;
 		&-logo{
 			margin: 0;
 		}
