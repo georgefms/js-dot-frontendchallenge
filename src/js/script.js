@@ -25,37 +25,47 @@ document.getElementsByTagName('head')[0].appendChild(script);
     function(){
         $(".yellow").toggle()
         if($(".yellow").is(":visible")){
-          $(this).addClass("plus").removeClass("minus")
-
+          $(this).addClass("minus").removeClass("plus")
+          $("#gray-toggle").addClass("plus").remove("minus")
+          $("#red-toggle").addClass("plus").remove("minus")
+          $(".red").hide();
+          $(".gray").hide();
         }
         else{
-          $(this).addClass("minus").removeClass("plus")
+          $(this).addClass("plus").removeClass("minus")
         }
       }
   )
   $("#gray-toggle").click(
     function(){
-    $(".gray").toggle()
-    if($(".gray").is(":visible")){
-      $(this).addClass("plus").removeClass("minus")
-
-    }
-    else{
-      $(this).addClass("minus").removeClass("plus")
-    }
-  }
+        $(".gray").toggle()
+        if($(".gray").is(":visible")){
+          $(this).addClass("minus").removeClass("plus")
+          $("#yellow-toggle").addClass("plus").remove("minus")
+          $("#red-toggle").addClass("plus").remove("minus")
+          $(".yellow").hide();
+          $(".red").hide();
+        }
+        else{
+          $(this).addClass("plus").removeClass("minus")
+        }
+      }
   )
-
   $("#red-toggle").click(
     function(){
-    $(".red").toggle()
-    if($(".red").is(":visible")){
-      $(this).addClass("plus").removeClass("minus")
-
-    }
-    else{
-      $(this).addClass("minus").removeClass("plus")
-    }
-  }
+        $(".red").toggle()
+        if($(".red").is(":visible")){
+          $(this).addClass("minus").removeClass("plus")
+          $("#gray-toggle").addClass("plus").remove("minus")
+          $("#yellow-toggle").addClass("plus").remove("minus")
+          $(".yellow").hide();
+          $(".gray").hide();
+        }
+        else{
+          $(this).addClass("plus").removeClass("minus")
+          
+        }
+      }
   )
+
 
